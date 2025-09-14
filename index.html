@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            .container{
+                background-color: white;
+                margin-left: 500px;
+                border-style: solid;
+                border-color:teal;
+                padding: 50px;
+                border-width: 20px;
+                width: 540px;
+                height: 580px;
+
+            }
+            .row{ 
+                display: flex;
+                color: teal;
+                font-sty;
+            }
+            .me{
+                margin-right: 50px;
+            }.email{
+                margin-top: 20px;
+                color: teal;
+            }
+            .col{
+                margin-top: 20px;
+                margin-right: 50px;
+            }
+            .us{
+                margin-top: 20px;
+            }
+        
+            .gender{
+                margin-top: 20px;
+                margin-right: 100px;
+            }
+            .hobbies{
+                margin-top: 20px;
+                margin-left: 50px;
+            }
+            .src{
+                margin-top: 20px;
+            }
+            .anto{
+                display: inline-flex;
+                color: teal;
+            }
+            .income{
+                margin-top: 20px;
+                margin-left: 50px;
+            }
+            .pfp{
+                margin-top: 20px;
+            }
+            .age{
+                margin-top: 20px;
+                margin-left: 25px;
+            }
+            .create{
+                text-align: center;
+            }
+            .derry{
+                display: flex;
+                color: teal;
+            }
+            .bio{
+               margin-top: 20px;
+               color: teal;
+            }
+            .header{
+            text-align:center;
+            color:gray;
+            }
+            .create{
+                color: teal;
+                text-align: right;
+                margin-top: 20px;
+            }
+        </style>
+
+    </head>
+    <body>
+    <div class="container">
+        <div class="header">
+            <h1>Create Account <hr> </h1>
+        </div>
+        <form>
+            <div class="row">
+                <div class="me">
+                  <label for="name">First Name*</label> <br>
+                  <input type="text" id="name" placeholder="Enter your first name" size="28">
+                </div>
+                <div>
+                  <label for="name">Last Name</label> <br> 
+                  <input type="text" id="name" placeholder="Enter your last name" size="28">
+                </div>
+            </div>
+            <div class="email">
+                <label for="email">Email*</label> <br>
+                <input type="email" id="email" placeholder="Enter your email" size="69">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="pass">Password*</label> <br>
+                    <input type="password" id="pass" placeholder="Enter your password" size="28">
+                </div>
+                <div class="us">
+                    <label for="pass">Confirm Password*</label> <br>
+                    <input type="password" id="pass" placeholder="Confirm your password" size="28">
+                </div>
+            </div>
+         
+            <div class="row">
+                <div class="gender">
+                    <label for="gender">Gender:</label> <br>
+                    <input type="radio" id="gender">Male
+                    <input type="radio" id="gender">Female
+                </div>
+                <div class="hobbies">
+                    <label for="hobbies">Hobbies</label> <br>
+                    <input type="checkbox" id="hobbies">Music
+                    <input type="checkbox" id="hobbies">Sports
+                    <input type="checkbox" id="hobbies">Travel
+                    <input type="checkbox" id="hobbies">Movies           
+                </div>
+            </div>
+            <div class="anto">
+                <div class="src">
+                    <label for="srcincome">Source of Income</label> <br>
+                    <select style="width: 225px;">
+                        <option>employed</option>
+                        <option>unemployed</option>
+                    </select>
+                </div>
+                <div class="income">
+                    <label for="income">Income</label> <br>
+                    <input type="range" id="income">20K
+                    
+                </div>
+            </div>
+            <div class="derry">
+                <div class="pfp">
+                    <label for="pfp">Upload Profile Picture</label> <br>
+                    <input type="file" id="pfp">
+                </div>
+                <div class="age">
+                    <label for="age">Age</label> <br>
+                    <input type="number" id="age" placeholder="">
+                </div>
+            </div>
+            <div class="bio">
+                <label for="bio">Bio</label> <br>
+                <textarea name="bio" rows="5" cols="65"></textarea>
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="create">
+                <input  type="submit" value="Create">
+            </div>
+        </form>
+    </div>
+    </body>
+</html>
